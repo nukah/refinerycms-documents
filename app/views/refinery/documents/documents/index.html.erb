@@ -1,0 +1,73 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="pragma" content="no-cache">
+  <title>Документы ОАО "Первая Образцовая Типография"</title>
+  <style type="text/css">
+	body {
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 50px;
+		font-family: Georgia; 
+	/* background: #FAE29B; */
+		background: #5C513B;
+	}
+	h1 {
+		text-align: center;
+		color: #FFFFFF;
+	}
+	img {
+		position: static;
+		display: block;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+		border: 1px solid black;
+	}
+	.holder {
+		width: 70%;
+		position: relative;
+		left: 15%;
+		right: 15%;
+	}
+	p {
+		font-size: medium; 
+		font-style: normal; 
+		font-weight:bold;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		text-align: center;
+	}
+	.description {
+		font-style: italic;
+		font-size: 80%;
+		color: #C0C0C0;
+	}
+	a:link {
+		color: #FFDB9C;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a:visited {
+		color: #FFBF52;
+		text-decoration: overline;
+	}	
+  </style>
+</head>
+
+<body>
+	<h1>Список документов "Первая Образцовая Типография"</h1>
+    <% @documents.each do |document| %>
+    	<% if document.file %>
+		  <p>
+		    <%= link_to document.title, document.file.url %><br>
+		  </p>
+     	<% end %>
+    <% end %>
+ </body>
+</html>

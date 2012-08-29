@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      documents:
+        title: Документы
+    documents:
+      admin:
+        documents:
+          actions:
+            create_new: Добавить новый документ
+            reorder: Пересортировать документы
+            reorder_done: Закончить пересортировку
+          records:
+            title: Документы
+            sorry_no_results: Не найдено.
+            no_items_yet: Документов нет.
+          document:
+            view_live_html: Просмотреть
+            edit: Редактировать
+            delete: Удалить навсегда
+      documents:
+        show:
+          other: Другие
+  activerecord:
+    attributes:
+      'refinery/documents/document':
+        title: Название
+        description: Описание
+        file: Документ
