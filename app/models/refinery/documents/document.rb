@@ -5,7 +5,7 @@ module Refinery
 
       attr_accessible :title, :description, :file_id, :position
 
-      acts_as_indexed :fields => [:title, :description]
+      acts_as_indexed :fields => :title
 
       validates :title, :presence => true, :uniqueness => true
 
