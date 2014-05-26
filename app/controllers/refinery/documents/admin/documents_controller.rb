@@ -3,7 +3,7 @@ module Refinery
     module Admin
       class DocumentsController < ::Refinery::AdminController
 
-        crudify :'refinery/documents/document', :paging => false, :xhr_paging => true
+        crudify :'refinery/documents/document', :paging => false, :xhr_paging => false
 
       end
     end

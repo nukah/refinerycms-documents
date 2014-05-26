@@ -5,8 +5,6 @@ module Refinery
 
       attr_accessible :title, :description, :file_id, :position
 
-      acts_as_indexed :fields => :title
-
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :file, :class_name => '::Refinery::Resource'
